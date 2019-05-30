@@ -1,17 +1,22 @@
 slots:
   color:
         type: text
+  query:
+        type: text
 
 intents:
   - greet
   - provide_color
+  - provide_query
 
 entities:
   - color
+  - query
 
 actions:
 - utter_greet
 - utter_color
+- utter_query
 - utter_bye
 
 templates:
@@ -20,6 +25,9 @@ templates:
 
   utter_color:
   - text: "Your favorite color is {color}."
+  
+  utter_color:
+  - text: "java source code of capture screenshot is {query}."
 
   utter_bye:
   - text: "Bye, thanks for chatting with color bot!"
