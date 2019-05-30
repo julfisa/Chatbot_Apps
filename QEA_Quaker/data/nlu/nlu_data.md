@@ -31,6 +31,6 @@
 - [white](color)
 
 ## intent: provide_query
-- I want[capture screenshot](query)
+- I want [capture screenshot](query)
 
 
