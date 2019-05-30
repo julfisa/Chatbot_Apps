@@ -3,6 +3,9 @@
     "action_listen": {
       "slots": [
         "color"
+      ],
+       "slots": [
+        "query"
       ]
     },
     "utter_bye": {
