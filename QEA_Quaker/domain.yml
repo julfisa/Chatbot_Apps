@@ -30,4 +30,4 @@ templates:
   - text: "java source code of capture screenshot is {query}."
 
   utter_bye:
-  - text: "Bye, thanks for chatting with color bot!"
+  - text: "Bye, thanks for chatting with QE&A_Quaker bot!"
