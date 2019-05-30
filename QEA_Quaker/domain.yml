@@ -26,7 +26,7 @@ templates:
   utter_color:
   - text: "Your favorite color is {color}."
   
-  utter_color:
+  utter_query:
   - text: "java source code of capture screenshot is {query}."
 
   utter_bye:
