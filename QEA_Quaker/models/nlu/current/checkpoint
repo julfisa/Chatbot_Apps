@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/julfisa/simplechatbot/01_rasa_color_cb/models/nlu/current/component_5_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "/home/julfisa/simplechatbot/01_rasa_color_cb/models/nlu/current/component_5_EmbeddingIntentClassifier.ckpt"
