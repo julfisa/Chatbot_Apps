@@ -6,6 +6,7 @@
     "entity_color",
     "entity_query",
     "slot_color_0",
+     "slot_query_0",
     "prev_action_listen",
     "prev_action_restart",
     "prev_action_default_fallback",
