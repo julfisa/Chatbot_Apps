@@ -4,6 +4,7 @@
     "intent_provide_color",
     "intent_provide_query",
     "entity_color",
+    "entity_query",
     "slot_color_0",
     "prev_action_listen",
     "prev_action_restart",
