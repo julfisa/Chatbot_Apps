@@ -3,26 +3,33 @@
 actions:
 - utter_greet
 - utter_color
+- utter_query
 - utter_bye
 config:
   store_entities_as_slots: true
 entities:
 - color
+- query
 forms: []
 intents:
 - greet:
     use_entities: true
 - provide_color:
     use_entities: true
+- provide_query:
+    use_entities: true
 slots:
   color:
     auto_fill: true
     initial_value: null
     type: rasa_core.slots.TextSlot
+    
 templates:
   utter_bye:
   - text: Bye, thanks for chatting with color bot!
   utter_color:
   - text: Your favorite color is {color}.
+  utter_query:
+  - text: Java source code of capture screenshot is {query}.
   utter_greet:
   - text: Hey there! :) What is your favorite color?
