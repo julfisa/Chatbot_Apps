@@ -1,0 +1,26 @@
+slots:
+  query:
+        type: text
+
+intents:
+  - greet
+  - provide_query
+
+entities:
+  - query
+
+actions:
+- utter_greet
+- utter_query
+- utter_bye
+
+templates:
+  utter_greet:
+  - text: "Hey there! :) How may I help you?"
+
+  utter_query:
+  - text: "Your solution is {query}."
+
+  utter_bye:
+  - text: "Bye, thanks for chatting with QEA_bot!"
+
