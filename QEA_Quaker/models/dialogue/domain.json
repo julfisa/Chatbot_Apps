@@ -2,6 +2,7 @@
   "states": [
     "intent_greet",
     "intent_provide_color",
+    "intent_provide_query",
     "entity_color",
     "slot_color_0",
     "prev_action_listen",
@@ -14,6 +15,7 @@
     "prev_action_back",
     "prev_utter_greet",
     "prev_utter_color",
+    "prev_utter_query",
     "prev_utter_bye"
   ]
 }
