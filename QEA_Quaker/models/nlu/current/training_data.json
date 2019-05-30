@@ -216,6 +216,18 @@
           }
         ],
         "text": "white"
+      },
+      {
+        "intent": "provide_query",
+        "entities": [
+          {
+            "start": 54,
+            "end": 96,
+            "value": "green",
+            "entity": "query"
+          }
+        ],
+        "text": "java source code of capture screenshot is TakesScreenshot scrShot =((TakesScreenshot)webdriver);"
       }
     ],
     "regex_features": [],
