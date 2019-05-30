@@ -24,6 +24,11 @@ slots:
     initial_value: null
     type: rasa_core.slots.TextSlot
     
+    query:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+    
 templates:
   utter_bye:
   - text: Bye, thanks for chatting with color bot!
