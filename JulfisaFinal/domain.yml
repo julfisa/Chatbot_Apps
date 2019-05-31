@@ -1,0 +1,25 @@
+slots:
+  query:
+        type: text
+
+intents:
+  - greet
+  - provide_query
+
+entities:
+  - query
+
+actions:
+- utter_greet
+- utter_query
+- utter_bye
+
+templates:
+  utter_greet:
+  - text: "Hey there! :) Which code you want?"
+  
+  utter_query:
+  - text: "java source code is copyFile(src, new File("C:/selenium/"+System. currentTimeMillis()+".png"));  of {query}."
+
+  utter_bye:
+  - text: "Bye, thanks for chatting with QE&A_quaker bot!"

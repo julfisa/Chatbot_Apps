@@ -1,0 +1,1230 @@
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="defaultLanguage" content="en">
+    <meta name="availableLanguages" content="en">
+
+    
+
+    <title>service_identity · PyPI</title>
+    <meta name="description" content="Service identity verification for pyOpenSSL &amp; cryptography.">
+
+    <link rel="stylesheet" href="/static/css/warehouse.6b3cae16.css">
+    <link rel="stylesheet" href="/static/css/fontawesome.91df071f.css">
+    <link rel="stylesheet" href="/static/css/regular.8819f1a9.css">
+    <link rel="stylesheet" href="/static/css/solid.002489ee.css">
+    <link rel="stylesheet" href="/static/css/brands.0c9eb08b.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,600,600italic,700,700italic|Source+Code+Pro:500">
+    <noscript>
+      <link rel="stylesheet" href="/static/css/noscript.69d08c82.css">
+    </noscript>
+
+    
+
+    <link rel="icon" href="/static/images/favicon.6a76275d.ico" type="image/x-icon">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 latest updates" href="/rss/updates.xml">
+    <link rel="alternate" type="application/rss+xml" title="RSS: 40 newest packages" href="/rss/packages.xml">
+    
+    <link rel="canonical" href="https://pypi.org/project/service_identity/">
+    
+
+    <meta property="og:url" content="https://pypi.org/project/service_identity/">
+    <meta property="og:site_name" content="PyPI">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://pypi.org/static/images/twitter.c0030826.jpg">
+    <meta property="og:title" content="service_identity">
+    <meta property="og:description" content="Service identity verification for pyOpenSSL &amp; cryptography.">
+
+    <link rel="search" type="application/opensearchdescription+xml" title="PyPI" href="/opensearch.xml">
+
+    
+    <script
+      src="https://cdn.ravenjs.com/3.26.2/raven.min.js"
+      integrity="sha384-D6LXy67EIC102DTuqypxwQsTHgiatlbvg7q/1YAWFb6lRyZ1lIZ6bGDsX7jxHNKA"
+      crossorigin="anonymous">
+    </script>
+    
+    <script async
+            data-ga-id="UA-55961911-1"
+            data-sentry-frontend-dsn="https://3a67b35c9dc248a191d761410b095861@sentry.io/1231155"
+            src="/static/js/warehouse.23f7bdd9.js">
+    </script>
+    
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-55961911-1"></script>
+    <script defer src="https://www.fastly-insights.com/insights.js?k=6a52360a-f306-421e-8ed5-7417d0d4a4e9&dnt=true"></script>
+  </head>
+
+  <body data-controller="viewport-toggle">
+    
+
+    <!-- Accessibility: this link should always be the first piece of content inside the body-->
+    <a href="#content" class="skip-to-content">Skip to main content</a>
+
+    <button class="button button--primary button--switch-to-mobile hidden" data-target="viewport-toggle.switchToMobile" data-action="viewport-toggle#switchToMobile">
+      Switch to mobile version
+    </button>
+
+    <section id="sticky-notifications" class="stick-to-top js-stick-to-top">
+      <!-- Add browser warning. Will show for ie9 and below -->
+      <!--[if IE]>
+      <div class="notification-bar notification-bar--danger">
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning:</span>
+        </span>
+        <span class="notification-bar__message">You are using an unsupported browser, upgrade to a newer version.</span>
+      </div>
+      <![endif]-->
+      
+      <noscript>
+      <div class="notification-bar notification-bar--danger">
+        
+        <span class="notification-bar__icon">
+          <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+          <span class="sr-only">Warning:</span>
+        </span>
+        <span class="notification-bar__message">Some features may not work without JavaScript. Please try enabling it if you encounter problems.</span>
+      </div>
+      </noscript>
+    </section>
+
+    <div class="notification-bar">
+      <span class="notification-bar__message">
+        Donate to the Python Software Foundation or Purchase a PyCharm License to Benefit the PSF!
+        <a href="https://www.python.org/psf/donations/2019-q2-drive/" target="_blank" title="Donate to the Python Software Foundation">Donate Now</a>
+      </span>
+    </div>
+
+    
+      <div data-html-include="/_includes/flash-messages/">
+      </div>
+    
+
+    
+
+    
+      <div data-html-include="/_includes/session-notifications/">
+      </div>
+    
+
+    <header class="site-header ">
+      <div class="site-container">
+        <div class="split-layout">
+          
+          <div class="split-layout">
+            <div>
+              <a class="site-header__logo" href="/">
+                <img alt="PyPI" src="/static/images/logo-small.6eef541e.svg">
+              </a>
+            </div>
+
+            <form class="search-form search-form--primary" action="/search/">
+              <div role="search">
+                <label for="search" class="sr-only">Search PyPI</label>
+                <input id="search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="">
+                
+                <button type="submit" class="search-form__button">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                  <span class="sr-only">Search</span>
+                </button>
+              </div>
+            </form>
+          </div>
+          
+
+          <div data-html-include="/_includes/current-user-indicator/">
+            <nav id="user-indicator" class="horizontal-menu horizontal-menu--light horizontal-menu--tall" aria-label="Main navigation">
+  <a class="horizontal-menu__link horizontal-menu__link--remove-on-mobile" href="/help/">Help</a>
+  <a class="horizontal-menu__link horizontal-menu__link--remove-on-mobile" href="https://donate.pypi.org">Donate</a>
+  <a class="horizontal-menu__link" href="/account/login/">Log in</a>
+  <a class="horizontal-menu__link" href="/account/register/">Register</a>
+</nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    
+    <section class="mobile-search">
+      <form class="search-form search-form--fullwidth" action="/search/">
+        <div role="search">
+          <label for="mobile-search" class="sr-only">Search PyPI</label>
+          <input id="mobile-search" class="search-form__search" type="text" name="q" placeholder="Search projects" value="">
+          
+          <button type="submit" class="search-form__button">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <span class="sr-only">Search</span>
+          </button>
+          </button>
+        </div>
+      </form>
+    </section>
+    
+
+    <main id="content">
+      
+<section class="banner">
+  <div class="package-header">
+    <div class="package-header__left">
+      <h1 class="package-header__name">
+        service_identity 18.1.0
+      </h1>
+
+      
+      <p class="package-header__pip-instructions">
+        <span id="pip-command">pip install service_identity</span>
+        <button class="-js-copy-pip-command tooltipped tooltipped-s" data-clipboard-target="#pip-command" aria-label="Copy to clipboard" data-original-label="Copy to clipboard">
+          <i class="fa fa-copy" aria-hidden="true"></i>
+          <span class="sr-only">Copy PIP instructions<span>
+        </button>
+      </p>
+      
+    </div>
+
+    <div class="package-header__right">
+      
+      <a class="status-badge status-badge--good" href="/project/service_identity/">Latest version</a>
+      
+      <p class="package-header__date">Last released: <time class="-js-relative-time" datetime="2018-12-05T12:50:40+0000" data-controller="localized-time" data-localized-time-relative="true">
+  Dec 5, 2018
+</time></p>
+    </div>
+  </div>
+</section>
+
+<section class="horizontal-section horizontal-section--grey horizontal-section--thin">
+  <div class="site-container">
+    <div class="split-layout split-layout--middle package-description">
+    
+      <p class="package-description__summary">Service identity verification for pyOpenSSL &amp; cryptography.</p>
+    
+    <div data-html-include="/_includes/edit-project-button/service-identity">
+    </div>
+    </div>
+  </div>
+</section>
+
+<section data-controller="project-tabs">
+  <div class="tabs-container">
+    <div class="vertical-tabs">
+      <div class="vertical-tabs__tabs">
+        <div class="sidebar-section">
+          <h3 class="sidebar-section__title">Navigation</h3>
+            <nav role="tablist">
+              <a id="description-tab" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--is-active" href="#description" role="tab">
+                <i class="fa fa-align-left" aria-hidden="true"></i>
+                Project description
+              </a>
+              <a id="history-tab" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" href="#history" role="tab">
+                <i class="fa fa-history" aria-hidden="true"></i>
+                Release history
+              </a>
+              
+                <a id="files-tab" data-target="project-tabs.tab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon" href="#files" role="tab">
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Download files
+                </a>
+              
+            </nav>
+        </div>
+        
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Project links</h3>
+  
+  
+  <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://service-identity.readthedocs.io/" rel="nofollow">
+    
+
+
+  
+
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+  </a>
+  
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Statistics</h3>
+  
+  <p>View statistics for this project via <a
+          href="https://libraries.io/pypi/service_identity">Libraries.io</a>, or by using
+    <a href="https://packaging.python.org/guides/analyzing-pypi-package-downloads/">Google
+      BigQuery</a></p>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Meta</h3>
+  
+  <p><strong>License:</strong> MIT License (MIT)</p>
+  
+  
+    <p><strong>Author:</strong> <a href="mailto:hs@ox.cx">Hynek Schlawack</a></p>
+  
+  
+    <p><strong>Maintainer:</strong> <a href="mailto:hs@ox.cx">Hynek Schlawack</a></p>
+  
+  
+  <p class="tags">
+    <i class="fa fa-tags" aria-hidden="true"></i>
+    <span class="sr-only">Tags:</span>
+    
+    <span class="package-keyword">
+      cryptography,
+    </span>
+    
+    <span class="package-keyword">
+      openssl,
+    </span>
+    
+    <span class="package-keyword">
+      pyopenssl
+    </span>
+    
+  </p>
+  
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Maintainers</h3>
+  
+    
+    <span class="sidebar-section__maintainer">
+      <a href="/user/hynek/" aria-label="hynek" class="sidebar-section__user-gravatar">
+        <img src="https://warehouse-camo.cmh1.psfhosted.org/f124056f84b15bf1fd04507fc3ac5a130bde0f08/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f31373465376230666636303936336638323164306239613466316133656635323f73697a653d3530" height="50" width="50" alt="Avatar for hynek from gravatar.com" title="Avatar for hynek from gravatar.com">
+      </a>
+      <a href="/user/hynek/" class="sidebar-section__user-gravatar-text">
+        hynek
+      </a>
+    </span>
+  
+</div>
+
+
+<div class="sidebar-section classifiers">
+  <h3>Classifiers</h3>
+  <dl>
+    
+    <dt>Development Status</dt>
+    
+    <dd>
+    <a href="/search/?c=Development+Status+%3A%3A+5+-+Production%2FStable">
+      5 - Production/Stable
+    </a>
+    </dd>
+    
+    
+    <dt>Intended Audience</dt>
+    
+    <dd>
+    <a href="/search/?c=Intended+Audience+%3A%3A+Developers">
+      Developers
+    </a>
+    </dd>
+    
+    
+    <dt>License</dt>
+    
+    <dd>
+    <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+MIT+License">
+      OSI Approved :: MIT License
+    </a>
+    </dd>
+    
+    
+    <dt>Natural Language</dt>
+    
+    <dd>
+    <a href="/search/?c=Natural+Language+%3A%3A+English">
+      English
+    </a>
+    </dd>
+    
+    
+    <dt>Operating System</dt>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+MacOS+%3A%3A+MacOS+X">
+      MacOS :: MacOS X
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+Microsoft+%3A%3A+Windows">
+      Microsoft :: Windows
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+POSIX">
+      POSIX
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+POSIX+%3A%3A+BSD">
+      POSIX :: BSD
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+POSIX+%3A%3A+Linux">
+      POSIX :: Linux
+    </a>
+    </dd>
+    
+    
+    <dt>Programming Language</dt>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python">
+      Python
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+2">
+      Python :: 2
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+2.7">
+      Python :: 2.7
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3">
+      Python :: 3
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.4">
+      Python :: 3.4
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.5">
+      Python :: 3.5
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.6">
+      Python :: 3.6
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.7">
+      Python :: 3.7
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+Implementation+%3A%3A+CPython">
+      Python :: Implementation :: CPython
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+Implementation+%3A%3A+PyPy">
+      Python :: Implementation :: PyPy
+    </a>
+    </dd>
+    
+    
+    <dt>Topic</dt>
+    
+    <dd>
+    <a href="/search/?c=Topic+%3A%3A+Security+%3A%3A+Cryptography">
+      Security :: Cryptography
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Topic+%3A%3A+Software+Development+%3A%3A+Libraries+%3A%3A+Python+Modules">
+      Software Development :: Libraries :: Python Modules
+    </a>
+    </dd>
+    
+    
+  </dl>
+</div>
+
+
+      </div>
+      <div class="vertical-tabs__panel">
+        <!-- mobile menu -->
+        <nav>
+          <a id="mobile-description-tab" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile vertical-tabs__tab--no-top-border vertical-tabs__tab--is-active" href="#description">
+            <i class="fa fa-align-left" aria-hidden="true"></i>
+            Project description
+          </a>
+          <a id="mobile-data-tab" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" href="#data">
+            <i class="fa fa-info-circle" aria-hidden="true"></i>
+            Project details
+          </a>
+          <a id="mobile-history-tab" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" href="#history">
+            <i class="fa fa-history" aria-hidden="true"></i>
+            Release history
+          </a>
+          
+          <a id="mobile-files-tab" data-target="project-tabs.mobileTab" data-action="project-tabs#onTabClick" class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--mobile" href="#files">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            Download files
+          </a>
+          
+        </nav>
+
+        
+        <div id="description" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="description-tab mobile-description-tab">
+          <h2 class="page-title">Project description</h2>
+          
+          <div class="project-description">
+            <a href="https://service-identity.readthedocs.io/en/stable/?badge=stable" rel=nofollow><img alt="Documentation Status" src="https://warehouse-camo.cmh1.psfhosted.org/1004a1e13afbee1664c93fb40567dcb224771d02/68747470733a2f2f72656164746865646f63732e6f72672f70726f6a656374732f736572766963652d6964656e746974792f62616467652f3f76657273696f6e3d737461626c65"></a>
+<a href="https://travis-ci.org/pyca/service_identity" rel=nofollow><img alt="CI status" src="https://warehouse-camo.cmh1.psfhosted.org/1862e8beb822abb35d3ef2a8ba4b00bf695ae04f/68747470733a2f2f7472617669732d63692e6f72672f707963612f736572766963655f6964656e746974792e7376673f6272616e63683d6d6173746572"></a>
+<a href="https://codecov.io/github/pyca/service_identity" rel=nofollow><img alt="Test Coverage" src="https://warehouse-camo.cmh1.psfhosted.org/edf1ea1ef2fd69f598c5d66bf1dbeb1259f2c2ad/68747470733a2f2f636f6465636f762e696f2f6769746875622f707963612f736572766963655f6964656e746974792f6272616e63682f6d61737465722f67726170682f62616467652e737667"></a>
+<a href="https://github.com/ambv/black" rel=nofollow><img alt="Code style: black" src="https://warehouse-camo.cmh1.psfhosted.org/fbfdc7754183ecf079bc71ddeabaf88f6cbc5c00/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532307374796c652d626c61636b2d3030303030302e737667"></a>
+<a href="https://www.irccloud.com/invite?channel=%23cryptography-dev&amp;amp;hostname=irc.freenode.net&amp;amp;port=6697&amp;amp;ssl=1" rel=nofollow><img alt="https://www.irccloud.com/invite-svg?channel=%23cryptography-dev&amp;amp;hostname=irc.freenode.net&amp;amp;port=6697&amp;amp;ssl=1" src="https://warehouse-camo.cmh1.psfhosted.org/f75156ae47befedf678f8d7971ccc626e57a100e/68747470733a2f2f7777772e697263636c6f75642e636f6d2f696e766974652d7376673f6368616e6e656c3d25323363727970746f6772617068792d64657626616d703b686f73746e616d653d6972632e667265656e6f64652e6e657426616d703b706f72743d3636393726616d703b73736c3d31"></a>
+<p>Use this package if:</p>
+<ul>
+<li>you use <a href="https://pypi.org/project/pyOpenSSL/" rel=nofollow>pyOpenSSL</a> and don’t want to be <a href="https://en.wikipedia.org/wiki/Man-in-the-middle_attack" rel=nofollow>MITM</a>ed or</li>
+<li>if you want to verify that a <a href="https://cryptography.io/" rel=nofollow>PyCA cryptography</a> certificate is valid for a certain hostname or IP address.</li>
+</ul>
+<p><tt>service_identity</tt> aspires to give you all the tools you need for verifying whether a certificate is valid for the intended purposes.</p>
+<p>In the simplest case, this means <em>host name verification</em>.
+However, <tt>service_identity</tt> implements <a href="https://www.rfc-editor.org/info/rfc6125" rel=nofollow>RFC 6125</a> fully and plans to add other relevant RFCs too.</p>
+<p><tt>service_identity</tt>’s documentation lives at <a href="https://service-identity.readthedocs.io/" rel=nofollow>Read the Docs</a>, the code on <a href="https://github.com/pyca/service_identity" rel=nofollow>GitHub</a>.</p>
+<div id=release-information>
+<h2>Release Information</h2>
+<h2 id=id1><span class=section-subtitle>18.1.0 (2018-12-05)</span></h2>
+<div id=changes>
+<h3>Changes:</h3>
+<ul>
+<li>pyOpenSSL is optional now if you use <tt>service_identity.cryptography.*</tt> only.</li>
+<li>Added support for <tt>iPAddress</tt> <tt>subjectAltName</tt>s.
+You can now verify whether a connection or a certificate is valid for an IP address using <tt>service_identity.pyopenssl.verify_ip_address()</tt> and <tt>service_identity.cryptography.verify_certificate_ip_address()</tt>.
+<a href="https://github.com/pyca/service_identity/pull/12" rel=nofollow>#12</a></li>
+</ul>
+<p><a href="https://service-identity.readthedocs.io/en/stable/changelog.html" rel=nofollow>Full changelog</a>.</p>
+</div>
+</div>
+<div id=authors>
+<h2>Authors</h2>
+<p><tt>service_identity</tt> is written and maintained by <a href="https://hynek.me/" rel=nofollow>Hynek Schlawack</a>.</p>
+<p>The development is kindly supported by <a href="https://www.variomedia.de/" rel=nofollow>Variomedia AG</a>.</p>
+<p>Other contributors can be found in <a href="https://github.com/pyca/service_identity/graphs/contributors" rel=nofollow>GitHub’s overview</a>.</p>
+</div>
+
+          </div>
+          
+        </div>
+
+        
+        <div id="data" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="mobile-data-tab">
+          <h2 class="page-title">Project details</h2>
+          
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Project links</h3>
+  
+  
+  <a class="vertical-tabs__tab vertical-tabs__tab--with-icon vertical-tabs__tab--condensed" href="https://service-identity.readthedocs.io/" rel="nofollow">
+    
+
+
+  
+
+
+<i class="fas fa-home" aria-hidden="true"></i>Homepage
+  </a>
+  
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Statistics</h3>
+  
+  <p>View statistics for this project via <a
+          href="https://libraries.io/pypi/service_identity">Libraries.io</a>, or by using
+    <a href="https://packaging.python.org/guides/analyzing-pypi-package-downloads/">Google
+      BigQuery</a></p>
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Meta</h3>
+  
+  <p><strong>License:</strong> MIT License (MIT)</p>
+  
+  
+    <p><strong>Author:</strong> <a href="mailto:hs@ox.cx">Hynek Schlawack</a></p>
+  
+  
+    <p><strong>Maintainer:</strong> <a href="mailto:hs@ox.cx">Hynek Schlawack</a></p>
+  
+  
+  <p class="tags">
+    <i class="fa fa-tags" aria-hidden="true"></i>
+    <span class="sr-only">Tags:</span>
+    
+    <span class="package-keyword">
+      cryptography,
+    </span>
+    
+    <span class="package-keyword">
+      openssl,
+    </span>
+    
+    <span class="package-keyword">
+      pyopenssl
+    </span>
+    
+  </p>
+  
+  
+</div>
+
+
+<div class="sidebar-section">
+  <h3 class="sidebar-section__title">Maintainers</h3>
+  
+    
+    <span class="sidebar-section__maintainer">
+      <a href="/user/hynek/" aria-label="hynek" class="sidebar-section__user-gravatar">
+        <img src="https://warehouse-camo.cmh1.psfhosted.org/f124056f84b15bf1fd04507fc3ac5a130bde0f08/68747470733a2f2f7365637572652e67726176617461722e636f6d2f6176617461722f31373465376230666636303936336638323164306239613466316133656635323f73697a653d3530" height="50" width="50" alt="Avatar for hynek from gravatar.com" title="Avatar for hynek from gravatar.com">
+      </a>
+      <a href="/user/hynek/" class="sidebar-section__user-gravatar-text">
+        hynek
+      </a>
+    </span>
+  
+</div>
+
+
+<div class="sidebar-section classifiers">
+  <h3>Classifiers</h3>
+  <dl>
+    
+    <dt>Development Status</dt>
+    
+    <dd>
+    <a href="/search/?c=Development+Status+%3A%3A+5+-+Production%2FStable">
+      5 - Production/Stable
+    </a>
+    </dd>
+    
+    
+    <dt>Intended Audience</dt>
+    
+    <dd>
+    <a href="/search/?c=Intended+Audience+%3A%3A+Developers">
+      Developers
+    </a>
+    </dd>
+    
+    
+    <dt>License</dt>
+    
+    <dd>
+    <a href="/search/?c=License+%3A%3A+OSI+Approved+%3A%3A+MIT+License">
+      OSI Approved :: MIT License
+    </a>
+    </dd>
+    
+    
+    <dt>Natural Language</dt>
+    
+    <dd>
+    <a href="/search/?c=Natural+Language+%3A%3A+English">
+      English
+    </a>
+    </dd>
+    
+    
+    <dt>Operating System</dt>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+MacOS+%3A%3A+MacOS+X">
+      MacOS :: MacOS X
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+Microsoft+%3A%3A+Windows">
+      Microsoft :: Windows
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+POSIX">
+      POSIX
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+POSIX+%3A%3A+BSD">
+      POSIX :: BSD
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Operating+System+%3A%3A+POSIX+%3A%3A+Linux">
+      POSIX :: Linux
+    </a>
+    </dd>
+    
+    
+    <dt>Programming Language</dt>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python">
+      Python
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+2">
+      Python :: 2
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+2.7">
+      Python :: 2.7
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3">
+      Python :: 3
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.4">
+      Python :: 3.4
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.5">
+      Python :: 3.5
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.6">
+      Python :: 3.6
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+3.7">
+      Python :: 3.7
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+Implementation+%3A%3A+CPython">
+      Python :: Implementation :: CPython
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Programming+Language+%3A%3A+Python+%3A%3A+Implementation+%3A%3A+PyPy">
+      Python :: Implementation :: PyPy
+    </a>
+    </dd>
+    
+    
+    <dt>Topic</dt>
+    
+    <dd>
+    <a href="/search/?c=Topic+%3A%3A+Security+%3A%3A+Cryptography">
+      Security :: Cryptography
+    </a>
+    </dd>
+    
+    <dd>
+    <a href="/search/?c=Topic+%3A%3A+Software+Development+%3A%3A+Libraries+%3A%3A+Python+Modules">
+      Software Development :: Libraries :: Python Modules
+    </a>
+    </dd>
+    
+    
+  </dl>
+</div>
+
+          <br>
+        </div>
+
+        
+        <div id="history" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="history-tab mobile-history-tab">
+          <h2 class="page-title split-layout">
+            <span>Release history</span>
+            <a class="reset-text margin-top" href="/help/#project-release-notifications">Release notifications</a>
+          </h2>
+
+          <section class="release-timeline">
+            
+            
+            
+            
+            <div class="release release--latest release--current">
+              <div class="release__meta">
+                
+                <span class="badge">This version</span>
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/blue-cube.e6165d35.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/service_identity/18.1.0/">
+                <p class="release__version">
+                  18.1.0 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2018-12-05T12:50:40+0000" data-controller="localized-time">
+  Dec 5, 2018
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/service_identity/17.0.0/">
+                <p class="release__version">
+                  17.0.0 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2017-05-23T22:10:51+0000" data-controller="localized-time">
+  May 23, 2017
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/service_identity/16.0.0/">
+                <p class="release__version">
+                  16.0.0 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2016-02-18T11:37:22+0000" data-controller="localized-time">
+  Feb 18, 2016
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/service_identity/14.0.0/">
+                <p class="release__version">
+                  14.0.0 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2014-08-22T14:10:46+0000" data-controller="localized-time">
+  Aug 22, 2014
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/service_identity/1.0.0/">
+                <p class="release__version">
+                  1.0.0 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2014-06-15T18:43:53+0000" data-controller="localized-time">
+  Jun 15, 2014
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/service_identity/0.2/">
+                <p class="release__version">
+                  0.2 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2014-04-06T01:22:29+0000" data-controller="localized-time">
+  Apr 6, 2014
+</time>
+                </p>
+              </a>
+            </div>
+            
+            
+            <div class="release release--oldest">
+              <div class="release__meta">
+                
+              </div>
+
+              <div class="release__graphic">
+                
+                <div class="release__line"></div>
+                
+                
+                <img class="release__node" alt="History Node" src="https://pypi.org/static/images/white-cube.8c3a6fe9.svg">
+                
+              </div>
+
+              <a class="card release__card" href="/project/service_identity/0.1/">
+                <p class="release__version">
+                  0.1 
+                </p>
+                <p class="release__version-date">
+                  <time class="tooltipped tooltipped-s -js-relative-time" datetime="2014-03-06T22:04:57+0000" data-controller="localized-time">
+  Mar 6, 2014
+</time>
+                </p>
+              </a>
+            </div>
+            
+          </section>
+        </div>
+
+        
+          
+          <div id="files" data-target="project-tabs.content" class="vertical-tabs__content" role="tabpanel" aria-labelledby="files-tab mobile-files-tab">
+            <h2 class="page-title">Download files</h2>
+            <p>Download the file for your platform. If you're not sure which to choose, learn more about <a href="https://packaging.python.org/installing/">installing packages</a>.</p>
+
+            <table class="table table--downloads">
+              <thead>
+                <tr>
+                  <th class="table__filename">
+                    Filename, size &amp; hash
+                    <a href="https://pip.pypa.io/en/stable/reference/pip_install/#hash-checking-mode" class="tooltipped tooltipped-n" aria-label="what's this?" data-original-label="what's this?">
+                      <i class="fa fa-question-circle" aria-hidden="true"></i>
+                      <span class="sr-only">SHA256 hash help</span>
+                    </a>
+                  </th>
+                  <th class="table__type">File type</th>
+                  <th class="table__version">Python version</th>
+                  <th class="table__upload-date">Upload date</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/e9/7c/2195b890023e098f9618d43ebc337d83c8b38d414326685339eb024db2f6/service_identity-18.1.0-py2.py3-none-any.whl">
+                      service_identity-18.1.0-py2.py3-none-any.whl
+                    </a>
+                     (11.8 kB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="001c0707759cb3de7e49c078a7c0c9cd12594161d3bf06b9c254fdcb1a60dc36">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Wheel
+                  </td>
+                  <td>
+                    
+                      py2.py3
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2018-12-05T12:50:40+0000" data-controller="localized-time">
+  Dec 5, 2018
+</time></td>
+                </tr>
+                
+                <tr>
+                  <td>
+                    <a href="https://files.pythonhosted.org/packages/9a/3d/9eb0563e066ea0540cf580695593ab079376e920016d4d1b3ff2fd8abf4b/service_identity-18.1.0.tar.gz">
+                      service_identity-18.1.0.tar.gz
+                    </a>
+                     (21.7 kB)
+                    <a class="-js-copy-hash table__sha256-link tooltipped tooltipped-s" aria-label="Copy to clipboard" data-original-label="Copy to clipboard" data-clipboard-text="0858a54aabc5b459d1aafa8a518ed2081a285087f349fe3e55197989232e2e2d">
+                      <i class="fa fa-copy" aria-hidden="true"></i>
+                      <span class="sr-only">Copy SHA256 hash</span>
+                      SHA256
+                    </a>
+                  </td>
+                  <td>
+                    Source
+                  </td>
+                  <td>
+                    
+                      None
+                    
+                  </td>
+                  <td><time class="tooltipped tooltipped-s -js-relative-time" datetime="2018-12-05T12:50:41+0000" data-controller="localized-time">
+  Dec 5, 2018
+</time></td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <div class="footer__logo">
+        <img src="/static/images/white-cube.8c3a6fe9.svg" alt="Logo" class="-js-white-cube">
+      </div>
+
+      <div class="footer__menus">
+        <ul class="footer__menu">
+          <li>
+            <h2>Help</h2>
+          </li>
+          <li><a href="https://packaging.python.org/installing/">Installing packages</a></li>
+          <li><a href="https://packaging.python.org/tutorials/packaging-projects/">Uploading packages</a></li>
+          <li><a href="https://packaging.python.org/">User guide</a></li>
+          <li><a href="/help/">FAQs</a></li>
+        </ul>
+        <ul class="footer__menu">
+          <li>
+            <h2>About PyPI</h2>
+          </li>
+          <li><a href="https://twitter.com/PyPI">PyPI on Twitter</a></li>
+          <li><a href="https://dtdg.co/pypi">Infrastructure dashboard</a></li>
+          <li><a href="https://www.python.org/dev/peps/pep-0541/">Package index name retention</a></li>
+          <li><a href="/sponsors/">Our sponsors</a></li>
+        </ul>
+
+
+        <ul class="footer__menu">
+          <li>
+            <h2>Contributing to PyPI</h2>
+          </li>
+          <li><a href="/help/#feedback">Bugs and feedback</a></li>
+          <li><a href="https://github.com/pypa/warehouse">Contribute on GitHub</a></li>
+          <li><a href="https://github.com/pypa/warehouse/graphs/contributors">Development credits</a></li>
+        </ul>
+        <ul class="footer__menu">
+          <li>
+            <h2>Using PyPI</h2>
+          </li>
+          <li><a href="https://www.pypa.io/en/latest/code-of-conduct/">Code of conduct</a></li>
+          <li><a href="/security/">Report security issue</a></li>
+          <li><a href="https://www.python.org/privacy/">Privacy policy</a></li>
+          <li><a href="/policy/terms-of-use/">Terms of use</a></li>
+        </ul>
+      </div>
+
+      <hr class="footer__divider">
+
+      <div class="footer__text">
+        
+        <p>Status: <a href="https://status.python.org/"><span data-statuspage-domain="https://2p66nmmycsj3.statuspage.io">all systems operational</span></a></p>
+        
+        <p>
+          Developed and maintained by the Python community, for the Python community.
+          <br>
+          <a href="https://donate.pypi.org">Donate today!</a>
+        </p>
+        <p>© 2019 <a href="https://www.python.org/psf/">Python Software Foundation</a></p>
+      </div>
+
+      <div class="centered hide-on-desktop">
+        <button class="button button--switch-to-desktop hidden" data-target="viewport-toggle.switchToDesktop" data-action="viewport-toggle#switchToDesktop">
+          Desktop version
+        </button>
+      </div>
+    </footer>
+
+    
+
+<div class="sponsors">
+  <p class="sponsors__title">Supported by</p>
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.elastic.co/">
+        <img class="sponsors__image" alt="Elastic" src="/static/images/sponsors/white/elastic.a912fb87.png">
+        <span class="sponsors__name">Elastic</span>
+        <span class="sponsors__service">Search</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.pingdom.com/">
+        <img class="sponsors__image" alt="Pingdom" src="/static/images/sponsors/white/pingdom.07446398.png">
+        <span class="sponsors__name">Pingdom</span>
+        <span class="sponsors__service">Monitoring</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://cloud.google.com/">
+        <img class="sponsors__image" alt="Google" src="/static/images/sponsors/white/google.2f72f26f.png">
+        <span class="sponsors__name">Google</span>
+        <span class="sponsors__service">BigQuery</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://getsentry.com/for/python">
+        <img class="sponsors__image" alt="Sentry" src="/static/images/sponsors/white/sentry.5ab437bc.png">
+        <span class="sponsors__name">Sentry</span>
+        <span class="sponsors__service">Error logging</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://aws.amazon.com/">
+        <img class="sponsors__image" alt="AWS" src="/static/images/sponsors/white/aws.5f800271.png">
+        <span class="sponsors__name">AWS</span>
+        <span class="sponsors__service">Cloud computing</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.datadoghq.com/">
+        <img class="sponsors__image" alt="DataDog" src="/static/images/sponsors/white/datadog.e569d741.png">
+        <span class="sponsors__name">DataDog</span>
+        <span class="sponsors__service">Monitoring</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.fastly.com/">
+        <img class="sponsors__image" alt="Fastly" src="/static/images/sponsors/white/fastly.0563c6f5.png">
+        <span class="sponsors__name">Fastly</span>
+        <span class="sponsors__service">CDN</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.signalfx.com/">
+        <img class="sponsors__image" alt="SignalFx" src="/static/images/sponsors/white/signalfx.560cb5c4.png">
+        <span class="sponsors__name">SignalFx</span>
+        <span class="sponsors__service">Supporter</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://www.digicert.com/">
+        <img class="sponsors__image" alt="DigiCert" src="/static/images/sponsors/white/digicert.79748718.png">
+        <span class="sponsors__name">DigiCert</span>
+        <span class="sponsors__service">EV certificate</span>
+      </a>
+    
+  
+    
+      <a class="sponsors__sponsor" target="_blank" rel="noopener" href="https://statuspage.io">
+        <img class="sponsors__image" alt="StatusPage" src="/static/images/sponsors/white/statuspage.67af0b3d.png">
+        <span class="sponsors__name">StatusPage</span>
+        <span class="sponsors__service">Status page</span>
+      </a>
+    
+  
+</div>
+
+    
+  </body>
+
+</html>

@@ -1,0 +1,29 @@
+%YAML 1.1
+---
+actions:
+- utter_greet
+- utter_query
+- utter_bye
+config:
+  store_entities_as_slots: true
+entities:
+- query
+forms: []
+intents:
+- greet:
+    use_entities: true
+- provide_query:
+    use_entities: true
+slots:   
+  query:
+    auto_fill: true
+    initial_value: null
+    type: rasa_core.slots.TextSlot
+    
+templates:
+  utter_bye:
+  - text: Bye, thanks for chatting with QE&A_Quaker bot!
+  utter_query:
+  - text: Java source code is copyFile(src, new File("C:/selenium/"+System. currentTimeMillis()+".png"));  of {query}.
+  utter_greet:
+  - text: Hey there! :) Which code you want?
